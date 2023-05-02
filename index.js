@@ -2,7 +2,7 @@ const name=document.getElementById("name");
 const container=document.querySelector(".tags");
 
 const addName= ()=>{
-    console.log("meow");
+    
     if(name.value===""){
         return null;
     }
@@ -10,6 +10,7 @@ const addName= ()=>{
     tag.setAttribute("class","tag");
     tag.innerText=`${name.value}`;
     container.append(tag);
+    
     
     
 };
